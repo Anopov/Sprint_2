@@ -1,5 +1,7 @@
 package model;
 
+import static model.constants.Discount.DEFAULT_DISCOUNT;
+
 public abstract class Food implements Discountable{
     protected int amount;
     protected double price;
@@ -24,7 +26,7 @@ public abstract class Food implements Discountable{
 
     @Override
     public double getDiscount(){
-        return 0;
+        return DEFAULT_DISCOUNT;
     }
 
 }
